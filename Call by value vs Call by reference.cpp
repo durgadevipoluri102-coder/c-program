@@ -1,0 +1,19 @@
+ #include<stdio.h>
+ void swap(int a, int b);
+ int main ()
+{ 
+    int a,b;
+	printf("Enter a and b values:");
+	scanf("%d%d",&a,&b);
+	printf("\n Before main() swap a=%d,b=%d",a,b);
+	swap(a,b);
+	printf("\n afer main() swap a=%d,b=%d",a,b);
+}
+void swap(int a,int b)
+{
+	int temp=a;
+	a=b;
+	b=temp;
+	printf("\n Inside swap() function a=%d,b=%d",a,b);
+	
+}
